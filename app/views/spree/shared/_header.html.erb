@@ -1,15 +1,53 @@
-<div id="spree-header">
+<!-- <div id="spree-header">
   <header id="header" data-hook>
-
+      <div class="container">
       <div class="row">
         <figure id="logo" class="col-md-4 col-sm-3" data-hook>
-          <a href="/" ><%= image_tag "logo.png", id: "logo" %></a>
+          <a href="/" ><%#= image_tag "logo-dejeuner.jpg", id: "logo" %></a>
         </figure>
-        <%= render partial: 'spree/shared/nav_bar' %>
+        <%#= render partial: 'spree/shared/nav_bar' %>
+      </div>
+
       </div>
 
   </header>
   <div class="container">
-    <%= render partial: 'spree/shared/main_nav_bar' %>
+    <%#= render partial: 'spree/shared/main_nav_bar' %>
+  </div>
+</div> -->
+
+
+<div class="header-container">
+  <div class="row">
+    <div class="col-md-2 header-logo">
+       <a href="/" ><%= image_tag "logo-dejeuner.jpg", id: "logo" %></a>
+    </div>
+    <div class="col-md-8 header-navigation">
+<li><%= link_to Spree.t("Accueil"), spree.root_path %></li>
+      <li><%= link_to Spree.t("Nos produits"), spree.products_path  %></li>
+      <li><%= link_to Spree.t("Notre carte"), {:controller => "home",:action => "index", :anchor => "produits"} %></li>
+      <li><%= link_to Spree.t("Commandez en ligne"), "/"  %></li>
+      <li><%= link_to Spree.t("Contactez nous"), "/"  %></li>
+    </ul>
+    </div>
+    <div class="col-md-2 login-header">
+<% if spree_current_user %>
+  <li><%= link_to Spree.t(:my_account), spree.account_path %></li>
+  <li><%= link_to Spree.t(:logout), spree.logout_path %></li>
+<% else %>
+  <li id="link-to-login"> <%= link_to spree.login_path do   %>
+      <%= image_tag "avatar.png" %>
+    <% end %>
+  </li>
+  <li id="link-to-cart" data-hook>
+        <noscript>
+          <%= link_to_cart %>
+        </noscript>
+        &nbsp;
+      </li>
+      <script>Spree.fetch_cart()</script>
+<% end %>
+
+    </div>
   </div>
 </div>

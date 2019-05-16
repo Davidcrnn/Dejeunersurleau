@@ -1,4 +1,81 @@
 <% @body_id = 'home-page' %>
 
+<div class="home-container">
+  <div class="banner-container">
+   <ul class="rslides" id="slider2">
+    <li class="img-slider1"></li>
+    <li class="img-slider2"></li>
+    <li class="img-slider3"></li>
+  </ul>
+  </div>
+</div>
 
-<h1>Home page à créer</h1>
+
+
+<div class="container description-restaurant">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 logo-description">
+      <%= image_tag 'banner.jpg' %>
+    </div>
+    <div class="col-xs-12 col-sm-6 text-description">
+        <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).</p>
+    </div>
+  </div>
+</div>
+
+<div class=" container commande-container">
+  <div class="row">
+  <div class="banner-commande">
+    <div class="button-commande">
+      <%= link_to products_path do  %>
+      <h1>Commander en ligne</h1>
+      <% end %>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+<div class="container produits-container">
+
+  <h1 id="produits">Nos Produits</h1>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 no-padding photo-huitre">
+      <%= image_tag "huitre.jpg" %>
+    </div>
+    <div class="col-xs-12 col-sm-6 no-padding text-description-home1">
+      <h2>" Cuisine maison "</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 no-padding text-description-home2">
+      <h2>" Produits Frais "</h2>
+    </div>
+    <div class="col-xs-12 col-sm-6 no-padding photo-salade">
+      <%= image_tag "salade.jpg" %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 no-padding photo-legume">
+      <%= image_tag "legumes.jpg" %>
+    </div>
+    <div class="col-xs-12 col-sm-6 no-padding text-description-home3">
+      <h2>" Produits locaux "</h2>
+    </div>
+  </div>
+
+</div>
+
+<script>
+$(function () {
+   $("#slider2").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: false,
+        speed: 2000,
+        timeout: 5000,
+        namespace: "transparent-btns"
+      });
+    });
+</script>
+

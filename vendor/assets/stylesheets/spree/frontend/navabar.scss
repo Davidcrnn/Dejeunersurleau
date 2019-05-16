@@ -1,13 +1,50 @@
-#spree-header {
+.header-container {
+  height: auto;
   background-color: white;
-  li, a, span {
-    color: black;
+  padding: 20px;
+  align-items: center;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  display: inline-block;
+  align-items: center;
+  box-shadow: 2px 2px 2px #3333332b;
+
+
+}
+
+.header-logo img {
+  height: 100px;
+  width: 100%;
+}
+
+.header-navigation {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  li {
+    list-style: none;
+    padding: 10px 15px;
+    font-size: 25px;
+
+  } li > a {
+    color: #c7be82;
+  } &:hover {
+    text-decoration: none;
   }
 }
 
-#spree-header {
-.nav a {
-  color: black;
-}
-
+.login-header {
+  height: 100px;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    flex-direction: column;
+  li {
+    list-style: none;
+  }
 }

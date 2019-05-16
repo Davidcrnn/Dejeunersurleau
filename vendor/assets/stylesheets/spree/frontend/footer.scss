@@ -1,0 +1,71 @@
+.bg-footer {
+    background: #EEE7CF;
+    padding: 50px 0 30px;
+}
+.footer-heading {
+    letter-spacing: 2px;
+}
+
+.footer-link a {
+    color: white;
+    line-height: 40px;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+.footer-link a:hover {
+    color: #1bbc9b;
+}
+
+.contact-info {
+    color: white;
+    font-size: 14px;
+}
+
+.mt-5 {
+  text-align: center;
+}
+.footer-alt {
+    color: white;
+}
+
+.footer-heading {
+    position: relative;
+    padding-bottom: 12px;
+    color: white;
+}
+
+.footer-heading:after {
+    content: '';
+    width: 25px;
+    border-bottom: 1px solid #FFF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    border-bottom: 1px solid white;
+}
+
+a.btn-contact {
+  text-decoration: none;
+  color: white;
+  &:hover {
+    border-bottom: 2px solid white;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .bg-footer {
+    padding: 10px 0;
+  }
+
+  h3.footer-heading {
+    font-size: 16px;
+  }
+
+  .footer-link a {
+    line-height: 30px;
+  }
+
+}
