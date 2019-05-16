@@ -1,3 +1,4 @@
+module Spree
 class Spree::ContactsController < Spree::StoreController
 
    def new
@@ -16,4 +17,5 @@ class Spree::ContactsController < Spree::StoreController
       render :new
     end
   end
+end
 end
