@@ -1,0 +1,67 @@
+<div class="container ">
+<div class="row">
+  <div class="col-xs-12">
+  <div id="mapCanvas" style="width: auto; height: 300px; margin-top: 50px;"></div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-md-4 contact-coordonnees">
+    <h2>Cabinet 107 Université</h2>
+    <p>107 rue de l'université</p>
+    <p>75007</p>
+
+    <p>Tél: 01 54 54 54 54</p>
+    <p>Email: contact@107universite.com</p>
+  </div>
+  <div class="col-xs-12 col-md-8 form-container">
+
+          <h2>Nous contacter</h2>
+  <div class="row contac">
+  <%= simple_form_for @contact do |f| %>
+  <div class="row col-xs-12">
+    <%= f.input :name, label: 'Votre nom (obligatoire)', :required => true, :input_html => {:class => 'input-style'} %>
+
+  </div>
+  <div class="row col-xs-12">
+    <%= f.input :email, label: 'Votre adresse email (obligatoire)',:required => true, :input_html => {:class => 'input-style'} %>
+
+  </div>
+  <div class="row col-xs-12">
+    <%= f.input :telephone, label: 'Votre téléphone (obligatoire)',:required => true, :input_html => {:class => 'input-style'} %>
+
+  </div>
+  <div class="row col-xs-12">
+    <%= f.input :message, label: 'Votre message (obligatoire)',:required => true, :as => :text, :required => true, :input_html => {:rows => 5, :class => 'input-style'} %>
+
+  </div>
+    <div class="form-actions">
+    <div class="hidden">
+    <%= f.input :nickname %>
+    </div>
+
+      <button class="button type1"><%= f.button :submit, 'Envoyer', class: 'border-top-color' %> </button>
+      <br><br>
+
+    </div>
+  <% end %>
+
+  </div>
+
+
+
+
+  </div>
+
+<div class="footer-form">
+  <p><em>*Les informations communiquées sont destinées à la société éditrice de ce site. Vous bénéficiez d'un droit d'accès, de modification, de rectification et de suppression de vos données personnelles (Loi n°2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique). Pour les exercer, adressez-vous à l'adresse de l'Editeur.</em></p>
+
+</div>
+  </div>
+</div>
+
+
+</div>
+
+
+
+
