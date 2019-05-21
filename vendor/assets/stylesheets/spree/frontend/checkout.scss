@@ -1,0 +1,92 @@
+.address-container-form {
+  background-color: #F6F3E6;
+     label {
+  color: #ad8326;
+    font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+} input, select {
+  background-color:#eee7cf ;
+  border-radius: 20px;
+  } input:focus {
+    border-color: #ad8326;
+    box-shadow: none;
+
+  }
+}
+
+.address-form-email {
+  background-color: #F6F3E6;
+      margin: 20px 0;
+}
+
+.checkout-email  {
+ label {
+  color: #ad8326;
+    font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+} input {
+  background-color:#eee7cf ;
+  } input:focus {
+    border-color: #ad8326;
+    box-shadow: none;
+  }
+}
+
+.form-header-checkout {
+  background-color:#F6F3E6 ;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  h3 {
+    color: #ad8326;
+    font-family: 'Amatic SC', cursive;
+  font-size: 25px;
+  font-weight: bold;
+  }
+}
+
+.resume-commande-container {
+  background-color: #eee7cf;
+  margin: 40px 0;
+  border-radius: 20px;
+  h3 {
+    color: #ad8326;
+    font-family: 'Amatic SC', cursive;
+  font-size: 25px;
+  font-weight: bold;
+  }
+}
+
+.table td {
+  color: #ad8326;
+    font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  span {
+     color: #ad8326;
+    font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  }
+}
+
+.btn-validation input {
+   padding: 15px 80px;
+    background: #eee7cf;
+    border: none;
+    color: #ad8326;
+    border: 2px solid #ad8326;
+    border-radius: 20px;
+    font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+  margin-left: 15px;
+}
+.span-address label {
+ color: #ad8326;
+    font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.span-address input {
+  background-color: red;
+}

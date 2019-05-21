@@ -1,0 +1,61 @@
+.products-index {
+  width: 100%;
+  h1 {
+    color: #c7be82;
+    font-family: 'Amatic SC', cursive;
+  }
+}
+
+.card {
+  background-color: #eee7cf;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+// Carte des produits
+
+.product-body {
+  height: 200px;
+  border: none;
+  padding-top: 20px
+  ;
+  p {
+    color: #ad8326;
+        font-size: 17px;
+    line-height: 25px;
+  } p {
+    margin: 0;
+  }
+}
+
+.product-body a:hover {
+  text-decoration: none;
+}
+.panel-footer {
+background-color: #d2bb5e;
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: 20px;
+}
+
+.panel {
+  border: none;
+      border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.info {
+  color: #c7be82;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.ingredients-container {
+      padding-top: 20px;
+}
+
+.ingredients-container a:hover {
+  text-decoration: none;
+}
+
+.row {
+  margin: 0 !important;
+}

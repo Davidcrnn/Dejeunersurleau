@@ -1,0 +1,132 @@
+.cart-container-order h1 {
+  color: #c7be82;
+  font-family: 'Amatic SC', cursive;;
+}
+
+.cart-container-order {
+
+}
+.cart-item-description-header {
+  border: none;
+}
+
+
+.table > thead > tr.active > th {
+  background-color: #eee7cf;
+  border: none;
+  color: #ad8326;
+  font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+}
+
+.cart-item-description h4 > a {
+  color: #ad8326;
+  font-family: 'Amatic SC', cursive;
+  font-size: 25px;
+}
+
+td.cart-item-price {
+  color: #ad8326;
+  font-family: 'Amatic SC', cursive;
+  font-size: 25px;
+}
+
+td.cart-item-total {
+  color: #ad8326;
+  font-family: 'Amatic SC', cursive;
+  font-size: 25px;
+}
+
+.glyphicon {
+  color: #ad8326;
+}
+
+span.line-item-description {
+  color: #866e43;
+}
+
+input.line_item_quantity {
+  background-color: #eee7cf;
+  border-radius: 20px;
+  color: #ad8326;
+}
+.table > tbody > tr > td {
+  border-top: 0.5px solid #ad8326;
+}
+
+.table > tbody + tbody {
+  border: none;
+}
+
+.table > tbody > tr.warning > td {
+  background-color: #eee7cf;
+}
+
+tr.warning > td > h5 {
+  color: #ad8326;
+  font-family: 'Amatic SC', cursive;
+  font-size: 25px;
+}
+
+.btn-secondaire {
+  padding: 15px;
+    background: #eee7cf;
+    border: none;
+    color: #ad8326;
+    font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+    border: 2px solid #ad8326;
+    border-radius: 20px;
+}
+
+.btn-secondaire-valider {
+  padding: 15px;
+    background: #eee7cf;
+    border: none;
+    color: #ad8326;
+    font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+    border: 2px solid #ad8326;
+    border-radius: 20px;
+}
+a.btn-validation {
+  padding: 15px;
+    background: #eee7cf;
+    border: none;
+    color: #ad8326;
+    border: 2px solid #ad8326;
+    border-radius: 20px;
+    font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+}
+button.btn-validation {
+  padding: 15px;
+    background: #ad8326;
+    border: none;
+    color: #eee7cf;;
+    border: 2px solid #ad8326;
+    border-radius: 20px;
+    font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+}
+
+div#empty-cart {
+  padding-top: 23px;
+}
+
+.coupon-container label {
+  color: #ad8326;
+  font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+  padding-top: 8px;
+  input {
+    background-color:#eee7cf ;
+  } input:focus {
+    border-color: #ad8326;
+    box-shadow: none;
+  }
+  }
+
+#validation-order, #coupon-order, #empty-cart {
+  height: 50px;
+}

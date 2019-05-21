@@ -11,6 +11,7 @@ gem 'spree', '~> 3.7'
 gem 'spree_auth_devise', '~> 3.5'
 gem 'spree_gateway', '~> 3.4'
 gem 'mail_form'
+gem 'spree_i18n', github: 'spree-contrib/spree_i18n'
 
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'

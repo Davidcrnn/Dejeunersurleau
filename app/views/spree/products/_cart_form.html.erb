@@ -31,7 +31,7 @@
     <% end %>
 
     <% if @product.price_in(current_currency) && !@product.price.nil? %>
-      <div data-hook="product_price" class="col-md-5">
+      <div data-hook="product_price" class="">
         <div id="product-price">
           <h6 class="product-section-title"><%= Spree.t(:price) %></h6>
           <div>
@@ -57,11 +57,11 @@
         <% if @product.can_supply? %>
           <div class="add-to-cart">
             <br />
-            <div class="input-group">
+            <div class="input-group input-quantite">
               <%= number_field_tag :quantity, 1, class: 'title form-control', min: 1 %>
               <span class="input-group-btn">
-                <%= button_tag class: 'btn btn-success', id: 'add-to-cart-button', type: :submit, disabled: true do %>
-                  <%= Spree.t(:add_to_cart) %>
+                <%= button_tag class: 'btn-ajout-panier', id: 'add-to-cart-button', type: :submit, disabled: true do %>
+                  <p><%= Spree.t(:add_to_cart) %></p>
                 <% end %>
               </span>
             </div>
