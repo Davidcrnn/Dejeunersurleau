@@ -1,14 +1,27 @@
 <% url = spree.product_path(product, taxon_id: taxon.try(:id)) %>
-<div id="product_<%= product.id %>" class="col-md-3 col-sm-6 col-xs-6 product-list-item" data-hook="products_list_item" itemscope itemtype="https://schema.org/Product">
-  <div class="panel panel-default">
+
+
+
+<div id="product_<%= product.id %>" class="col-xs-12 col-sm-6 col-md-4  product-list-item" data-hook="products_list_item" itemscope itemtype="https://schema.org/Product">
+  <div class="card">
     <% cache(taxon.present? ? [I18n.locale, current_currency, taxon, product] : cache_key_for_product(product)) do %>
-      <div class="panel-body text-center product-body">
+
+
+
+      <div class="text-center product-body">
+          <p><%= content_tag(:span, truncate(product.name, length: 50), class: 'info', itemprop: "name", title: product.name) %></p> <br/>
         <%= link_to url, itemprop: "url" do %>
-          <%= small_image(product, itemprop: "image") %><br/>
-          <%= content_tag(:span, truncate(product.name, length: 50), class: 'info', itemprop: "name", title: product.name) %>
+
+          <% if product.description.length > 1 %>
+          <div class="ingredients-container">
+            <p>Ingrédients: <%= product.description %></p>
+          </div>
+          <% else %>
+          <% end %>
         <% end %>
         <br/>
       </div>
+
       <div class="panel-footer text-center">
         <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
           <span class="price selling lead" itemprop="price" content="<%= (product.price_in(current_currency).amount.nil?)? 0 : product.price_in(current_currency).amount.to_d %>">
@@ -18,5 +31,7 @@
         </span>
       </div>
     <% end %>
+
   </div>
 </div>
+

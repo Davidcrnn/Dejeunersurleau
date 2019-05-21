@@ -1,0 +1,84 @@
+// show produuit
+
+.show-container {
+  padding: 50px 0;
+}
+
+.description-text {
+  height: auto;
+  background-color: #eee7cf;
+  padding: 30px;
+  font-size: 20px;
+  color: #ad8326;
+  box-shadow: 0Px 1px 6px #a06a4375;
+}
+
+.image-show-product img {
+  height: 300px;
+
+}
+
+.product-title {
+  font-family: 'Amatic SC', cursive;
+}
+
+h1.product-title {
+  font-family: 'Amatic SC', cursive;
+  color: #c7be82;
+}
+
+h6.product-section-title {
+  font-size: 30px;
+  font-family: 'Amatic SC', cursive;
+  color: #c7be82;
+}
+
+span.price {
+  font-size: 30px;
+  font-family: 'Amatic SC', cursive;
+  color: #c7be82;
+}
+
+h3.product-section-title {
+  font-size: 30px;
+  font-family: 'Amatic SC', cursive;
+  color: #c7be82;
+}
+
+.properties-section {
+  box-shadow: 0Px 1px 6px #a06a4375;
+}
+.properties-section td {
+  background-color: #eee7cf;
+  padding: 30px !important;
+  font-size: 20px;
+  color: #ad8326;
+}
+
+.input-quantite input {
+  background-color: #eee7cf;
+  border-radius: 20px;
+  border: none;
+  height: 50px;
+  font-size: 17px;
+  color:#ad8326;
+}
+
+.input-group .form-control:first-child {
+      border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+    box-shadow: none;
+}
+
+.btn-ajout-panier {
+  background-color: #ad8326;
+  border: none;
+  border-radius: 20px;
+  p {
+    color: #eee7cf;
+    font-size: 17px;
+    margin-bottom: 0;
+    padding: 12px;
+  }
+}

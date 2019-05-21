@@ -1,7 +1,7 @@
 .header-container {
   height: auto;
   background-color: white;
-  padding: 20px;
+  padding: 10px;
   align-items: center;
   position: sticky;
   width: 100%;
@@ -15,12 +15,12 @@
 }
 
 .header-logo img {
-  height: 100px;
+  height: 74px;
   width: 100%;
 }
 
 .header-navigation {
-  height: 100px;
+  height: 74px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,13 +32,14 @@
 
   } li > a {
     color: #c7be82;
+    font-family: 'Amatic SC', cursive;
   } &:hover {
     text-decoration: none;
   }
 }
 
 .login-header {
-  height: 100px;
+  height: 74px;
    display: flex;
   justify-content: center;
   align-items: center;

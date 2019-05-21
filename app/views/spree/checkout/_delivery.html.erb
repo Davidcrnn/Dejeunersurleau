@@ -1,16 +1,11 @@
-<div class="panel panel-default" id='shipping_method' data-hook>
-  <div class="panel-heading">
+<div class="" id='shipping_method' data-hook>
+  <div class="form-header-checkout">
     <h3 class="panel-title"><%= Spree.t(:delivery) %></h3>
   </div>
-  <div class="panel-body" data-hook="shipping_method_inner">
+  <div class="delivery-resume-container" data-hook="shipping_method_inner">
     <div id="methods">
       <%= form.fields_for :shipments do |ship_form| %>
         <div class="shipment">
-          <h4 class="stock-location" data-hook="stock-location">
-            <%= Spree.t(:package_from) %>
-            <strong class="stock-location-name" data-hook="stock-location-name"><%= ship_form.object.stock_location.name %></strong>
-          </h4>
-
           <table class="table stock-contents" data-hook="stock-contents">
             <colgroup>
               <col style="width: 10%;" />
@@ -45,7 +40,7 @@
                 <label>
                   <%= ship_form.radio_button :selected_shipping_rate_id, rate.id, data: { behavior: 'shipping-method-selector', cost: rate.display_cost } %>
                   <span class="rate-name"><%= rate.name %></span>
-                  <span class="badge rate-cost"><%= rate.display_cost %></span>
+                  <span class="livraison-badge"><%= rate.display_cost %></span>
                 </label>
               </li>
             <% end %>
@@ -95,9 +90,11 @@
 </div>
 
 <br />
+<div class="row">
+  <div class=" btn-validation col-xs-12" data-hook="buttons">
+  <%= submit_tag Spree.t(:save_and_continue), class: '' %>
+  </div>
 
-<div class="well text-right form-buttons" data-hook="buttons">
-  <%= submit_tag Spree.t(:save_and_continue), class: 'btn btn-lg btn-success' %>
 </div>
 
 <%= javascript_include_tag 'spree/frontend/checkout/shipment' %>
