@@ -9,9 +9,9 @@
 
 
       <div class="text-center product-body">
-          <p><%= content_tag(:span, truncate(product.name, length: 50), class: 'info', itemprop: "name", title: product.name) %></p> <br/>
         <%= link_to url, itemprop: "url" do %>
 
+          <p><%= content_tag(:span, truncate(product.name, length: 50), class: 'info', itemprop: "name", title: product.name) %></p> <br/>
           <% if product.description.length > 1 %>
           <div class="ingredients-container">
             <p>Ingrédients: <%= product.description %></p>
