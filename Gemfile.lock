@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/spree-contrib/spree_i18n.git
-  revision: 4d715d98c8ee17fe2d7d568a367e274aab2a62f5
+  remote: https://github.com/spree-contrib/spree_i18n.git
+  revision: b230796ed58cd6fe8197b4acdeea9ab89f3070ef
   specs:
     spree_i18n (3.3.2)
       deface (~> 1.0)
@@ -90,7 +90,7 @@ GEM
     climate_control (0.2.0)
     coderay (1.1.2)
     concurrent-ruby (1.1.5)
-    crass (1.0.4)
+    crass (1.0.5)
     css_parser (1.7.0)
       addressable
     deface (1.4.0)
@@ -160,7 +160,7 @@ GEM
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    loofah (2.2.3)
+    loofah (2.3.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -186,7 +186,7 @@ GEM
     msgpack (1.2.10)
     multi_json (1.13.1)
     nio4r (2.3.1)
-    nokogiri (1.10.3)
+    nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
     paperclip (6.1.0)
@@ -264,9 +264,9 @@ GEM
     responders (2.4.1)
       actionpack (>= 4.2.0, < 6.0)
       railties (>= 4.2.0, < 6.0)
-    routing-filter (0.6.2)
-      actionpack (>= 4.2, < 6)
-      activesupport (>= 4.2, < 6)
+    routing-filter (0.6.3)
+      actionpack (>= 4.2)
+      activesupport (>= 4.2)
     sassc (2.0.1)
       ffi (~> 1.9)
       rake
