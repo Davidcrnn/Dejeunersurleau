@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/spree-contrib/spree_i18n.git
-  revision: 4d715d98c8ee17fe2d7d568a367e274aab2a62f5
+  remote: https://github.com/spree-contrib/spree_i18n.git
+  revision: 132f80def0bfbb94d0becc6921717f6639cb4340
   specs:
     spree_i18n (3.3.2)
       deface (~> 1.0)
@@ -218,7 +218,7 @@ GEM
     puma (3.12.1)
     rabl (0.13.1)
       activesupport (>= 2.3.14)
-    rack (2.0.7)
+    rack (2.0.8)
     rack-proxy (0.6.5)
       rack
     rack-test (1.1.0)
@@ -264,9 +264,9 @@ GEM
     responders (2.4.1)
       actionpack (>= 4.2.0, < 6.0)
       railties (>= 4.2.0, < 6.0)
-    routing-filter (0.6.2)
-      actionpack (>= 4.2, < 6)
-      activesupport (>= 4.2, < 6)
+    routing-filter (0.6.3)
+      actionpack (>= 4.2)
+      activesupport (>= 4.2)
     sassc (2.0.1)
       ffi (~> 1.9)
       rake
